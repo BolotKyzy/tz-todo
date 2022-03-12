@@ -58,7 +58,7 @@
     {
       "dayId": 2,
       "text": "go to shopping",
-      "completed": false,
+      "completed": true,
       "id": 10
     },
     {
