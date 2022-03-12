@@ -35,6 +35,23 @@ const addTask = (obj) => {
 
     }
 }
+const editTask = (obj) => {
+    const newTaskText = window.prompt("Text of tasks", obj[1].text);
+    axios
+        .patch('http://localhost:3002/tasks/' + obj[1].id, {
+            text: newTaskText
+        })
+        .catch(() => {
+            alert('Не удалось обновить задачу');
+        });
+    if(!newTaskText) {
+        return;
+    }
+    return {
+        type: 'EDIT_TASK',
+        payload: [obj, newTaskText]
+    }
+}
 const completeTask = (obj) => {
     axios
         .patch('http://localhost:3002/tasks/' + obj[1], {
@@ -55,4 +72,5 @@ export {
     deleteTask,
     addTask,
     completeTask,
+    editTask
     }

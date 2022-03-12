@@ -45,8 +45,8 @@
     },
     {
       "dayId": 2,
-      "text": "do workouts 30min",
-      "completed": false,
+      "text": "do workouts 30mins",
+      "completed": true,
       "id": 7
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "dayId": 2,
-      "text": "do home work in Bil-410",
+      "text": "drink a tea",
       "completed": false,
       "id": 13
     },
@@ -87,7 +87,7 @@
     },
     {
       "dayId": 1,
-      "text": "read 10page in English",
+      "text": "read 10page in English!",
       "completed": false,
       "id": 15
     },
@@ -111,9 +111,15 @@
     },
     {
       "dayId": 5,
-      "text": "sleep early",
+      "text": "sleep early!",
       "completed": false,
       "id": 19
+    },
+    {
+      "dayId": 1,
+      "text": "go to shopping!",
+      "completed": false,
+      "id": 20
     }
   ]
 }

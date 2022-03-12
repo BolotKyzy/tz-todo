@@ -25,8 +25,6 @@ const DaysReducer = (state = initialState, action) => {
             } )
             return deletedList;
         case 'TO_COMPLETE_TASK':
-
-
             const newCompList = state.map(list => {
                 if (list.id === action.payload[0]) {
                     list.tasks = list.tasks.map(task => {
@@ -39,6 +37,19 @@ const DaysReducer = (state = initialState, action) => {
                 return list;
             });
             return newCompList;
+        case 'EDIT_TASK':
+          const newEditList = state.map(list => {
+                if (list.id === action.payload[0][0]) {
+                    list.tasks = list.tasks.map(task => {
+                        if (task.id === action.payload[0][1].id) {
+                            task.text = action.payload[1];
+                        }
+                        return task;
+                    });
+                }
+                return list;
+            });
+            return newEditList;
 
         default:
             return state;

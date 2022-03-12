@@ -2,7 +2,7 @@ import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import Menu from "./components/Menu";
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import {addTask, completeTask, deleteTask, fetchData} from "./redux/actions";
+import {addTask, completeTask, deleteTask, editTask, fetchData} from "./redux/actions";
 import {Tasks} from "./components/Tasks";
 
 function App() {
@@ -33,6 +33,10 @@ function App() {
     const onCompleteTask = (listId, taskId, isCompleted) => {
         dispatch(completeTask([listId, taskId, isCompleted]))
     }
+    const onEditTask = (listId, taskObj) => {
+        dispatch(editTask([listId, taskObj]));
+    }
+
 
     return (
       <div className="todo">
@@ -44,7 +48,7 @@ function App() {
                           list = { activeItem }
                           onAddTask = {onAddTask}
                           onRemoveTask = {onRemoveTask}
-                          // onEditTask = {onEditTask}
+                          onEditTask = {onEditTask}
                           onCompleteTask = {onCompleteTask}
                       />)
               }/>
