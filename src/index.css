@@ -6,6 +6,7 @@
   font-family: "Roboto", -apple-system, system-ui, sans-serif;
   box-sizing: border-box;
 }
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,26 +21,25 @@ body {
   height: calc(100vh - 100px);
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 30px rgba(71, 50, 50, 0.5);
-
   border-radius: 10px;
   border: 1px solid #f1f1f1;
   font-size: 14px;
-
-  &__sidebar {
-    background-color: #e5e5e5;
-    width: 40%;
-    height: 100%;
-    border-right: 1px solid #f1f1f1;
-    padding: 60px 20px;
-    color: #767676;
-    font-weight: 500;
-  }
-  &__tasks {
-    flex: 1;
-    padding: 60px;
-    overflow: auto;
-  }
 }
+.todo__sidebar {
+  background-color: #e5e5e5;
+  width: 40%;
+  height: 100%;
+  border-right: 1px solid #f1f1f1;
+  padding: 60px 20px;
+  color: #767676;
+  font-weight: 500;
+}
+.todo__tasks {
+  flex: 1;
+  padding: 60px;
+  overflow: auto;
+}
+
 .field {
   width: 200px;
   height: 40px;
@@ -50,24 +50,23 @@ body {
   padding: 8px 12px;
   margin-bottom: 30px;
   font-size: 14px;
-
-  &-grey {
-    width: 150px;
-    color: #868686;
-    &:hover {
-      background: darken(white, 5%);
-    }
-    &:active {
-      background: darken(white, 15%);
-    }
-
-    border: 3px solid #efefef;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
+.field-grey {
+  width: 150px;
+  color: #868686;
+  border: 3px solid #efefef;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.field-grey:hover {
+  background: #f2f2f2;
+}
+.field-grey:active {
+  background: #d9d9d9;
+}
+
 .field_1 {
   width: 200px;
   background: #4dd599;
@@ -77,10 +76,12 @@ body {
   color: white;
   font-weight: 600;
   font-size: 14px;
-  &:hover {
-    background: darken(#4dd599, 10%);
-  }
-  &:active {
-    background: darken(#4dd599, 15%);
-  }
 }
+.field_1:hover {
+  background: #2ec180;
+}
+.field_1:active {
+  background: #29ad73;
+}
+
+/*# sourceMappingURL=index.css.map */

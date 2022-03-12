@@ -1,0 +1,119 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "name": "Monday",
+      "progress": 0
+    },
+    {
+      "id": 2,
+      "name": "Tuesday",
+      "progress": 0
+    },
+    {
+      "id": 3,
+      "name": "Wednesday ",
+      "progress": 0
+    },
+    {
+      "id": 4,
+      "name": "Thursday ",
+      "progress": 0
+    },
+    {
+      "id": 5,
+      "name": "Friday",
+      "progress": 0
+    },
+    {
+      "id": 6,
+      "name": "Saturday",
+      "progress": 0
+    },
+    {
+      "id": 7,
+      "name": "Sunday",
+      "progress": 0
+    }
+  ],
+  "tasks": [
+    {
+      "dayId": 4,
+      "text": "solve 2 problem in codewars",
+      "completed": true,
+      "id": 2
+    },
+    {
+      "dayId": 2,
+      "text": "do workouts 30min",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "dayId": 3,
+      "text": "do home work in Bil-404",
+      "completed": true,
+      "id": 8
+    },
+    {
+      "dayId": 2,
+      "text": "go to shopping",
+      "completed": false,
+      "id": 10
+    },
+    {
+      "dayId": 4,
+      "text": "meet with friends",
+      "completed": false,
+      "id": 11
+    },
+    {
+      "dayId": 4,
+      "text": "get up at 6 o'clock ",
+      "completed": false,
+      "id": 12
+    },
+    {
+      "dayId": 2,
+      "text": "do home work in Bil-410",
+      "completed": false,
+      "id": 13
+    },
+    {
+      "dayId": 1,
+      "text": "read documentation in react",
+      "completed": true,
+      "id": 14
+    },
+    {
+      "dayId": 1,
+      "text": "read 10page in English",
+      "completed": false,
+      "id": 15
+    },
+    {
+      "dayId": 4,
+      "text": "clean the house",
+      "completed": true,
+      "id": 16
+    },
+    {
+      "dayId": 3,
+      "text": "Take a shower",
+      "completed": true,
+      "id": 17
+    },
+    {
+      "dayId": 5,
+      "text": "cook  dinner",
+      "completed": true,
+      "id": 18
+    },
+    {
+      "dayId": 5,
+      "text": "sleep early",
+      "completed": false,
+      "id": 19
+    }
+  ]
+}

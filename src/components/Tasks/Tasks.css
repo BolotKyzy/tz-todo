@@ -1,0 +1,146 @@
+.tasks a {
+  text-decoration: none;
+}
+.tasks:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.tasks .tasks-header h2 {
+  border-bottom: 1px solid #b63333;
+  padding-top: 17px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #b63333;
+  padding-bottom: 20px;
+}
+.tasks .tasks-header h2:hover img {
+  opacity: 0.3;
+}
+.tasks .tasks-header h2 img {
+  opacity: 0;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.tasks .tasks-header h2 img:hover {
+  opacity: 1;
+}
+.tasks .tasks__form-new {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 6px;
+  margin-top: 10px;
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+}
+.tasks .tasks__form-new:hover {
+  opacity: 1;
+}
+.tasks .tasks__form-new:hover span {
+  font-size: 16px;
+  font-weight: 600;
+}
+.tasks .tasks__form-new span {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #868686;
+}
+.tasks .tasks__form-block {
+  margin-top: 20px;
+}
+.tasks .tasks__form-block input {
+  width: 360px;
+}
+.tasks .tasks__form-block .buttons {
+  display: flex;
+}
+.tasks .tasks__form-block .buttons .field_1 {
+  margin-right: 10px;
+}
+.tasks .tasks-items {
+  margin-top: 30px;
+}
+.tasks .tasks-items h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #C9D1D3;
+}
+.tasks .tasks-items-blok {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.tasks .tasks-items-blok:hover .tasks .tasks-items-blok-actions {
+  opacity: 1;
+}
+.tasks .tasks-items-blok input {
+  border: none;
+  margin-left: 15px;
+}
+.tasks .tasks-items-blok-actions {
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+}
+.tasks .tasks-items-blok-actions div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #fafbfc;
+  border-radius: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.tasks .tasks-items-blok-actions div:hover {
+  background-color: #eef1f4;
+}
+.tasks .tasks-items-blok-actions div:hover svg {
+  opacity: 0.9;
+}
+.tasks .tasks-items-blok-actions div svg {
+  width: 11px;
+  height: 11px;
+  opacity: 0.4;
+}
+.tasks .tasks-items .checkbox:hover label {
+  background-color: #F2F2F2;
+  border-color: #F2F2F2;
+}
+.tasks .tasks-items .checkbox:hover label svg {
+  opacity: 1;
+}
+.tasks .tasks-items .checkbox input:checked + label {
+  background-color: #4DD599;
+  border: none;
+}
+.tasks .tasks-items .checkbox input:checked + label svg {
+  opacity: 1;
+}
+.tasks .tasks-items .checkbox input:checked + label svg path {
+  stroke: #fff;
+}
+.tasks .tasks-items .checkbox input {
+  display: none;
+}
+.tasks .tasks-items .checkbox label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #b63333;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.tasks .tasks-items .checkbox label svg {
+  opacity: 0;
+}
+.tasks .tasks-items .checkbox label svg path {
+  stroke: #B2B2B2;
+}
+
+/*# sourceMappingURL=Tasks.css.map */
